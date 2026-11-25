@@ -53,17 +53,20 @@ Leitura: a grade de células resolve o problema da diluição do ROI (caso ESEC)
 
 ## Ranking de territórios (25/11)
 
-A grade de células foi aplicada a áreas amostradas. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025, nas áreas com polígono oficial:
+A grade de células foi aplicada a sete áreas amostradas, com polígonos oficiais (WDPA e Funai), 500 células por área. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025:
 
 | # | Área amostrada | Células quentes | Drift mediano |
 |---|---|---|---|
-| 1 | REBIO Gurupi (MA) | 53% | 0,053 |
-| 2 | TI Kayapó (PA) | 24% | 0,023 |
-| 3 | TI Parque do Xingu (MT) | 16% | 0,021 |
-| 4 | PARNA Jamanxim (PA) | 7% | 0,026 |
+| 1 | REBIO Gurupi (MA) | 52,8% | 0,053 |
+| 2 | ESEC Uruçuí-Una (PI) | 41,4% | 0,046 |
+| 3 | TI Kayapó (PA) | 24,4% | 0,023 |
+| 4 | TI Alto Turiaçu (MA) | 23,2% | 0,024 |
+| 5 | TI Parque do Xingu (MT) | 15,6% | 0,021 |
+| 6 | TI Parque do Aripuanã (MT/RO) | 8,6% | 0,016 |
+| 7 | PARNA Jamanxim (PA) | 7,0% | 0,026 |
 
-Em refino, com o polígono oficial: TI Alto Turiaçu (MA), TI Parque do Aripuanã (MT/AM) e ESEC Uruçuí-Una (PI).
+Gurupi e Uruçuí-Una lideram. O mapa por célula mostra onde verificar primeiro.
 
 Nota metodológica: limiar de 0,05 calibrado em floresta amazônica.
 
-![Drift por célula em três áreas amostradas](planetsignal_ranking_4.png)
+![Drift por célula em seis áreas amostradas](planetsignal_ranking.png)
