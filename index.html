@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UCs sob Pressão</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>UCs sob Pressão</h1><p>Painel público nacional de unidades de conservação e terras indígenas sob pressão. Hack Brasil 2026.</p></header>
+<main>
+  <section id="mapa-sec"><div id="mapa" aria-label="Mapa das unidades"></div></section>
+  <section id="lista-sec">
+    <h2>Ranking</h2>
+    <table id="ranking"><thead><tr><th>#</th><th>Unidade</th><th>UF</th><th>Pressão</th></tr></thead><tbody></tbody></table>
+    <p id="aviso" class="nota"></p>
+    <article id="ficha" hidden></article>
+  </section>
+</main>
+<footer>Dados abertos: DETER (INPE), ICMBio, MMA, Funai, SICAR, SICOR. Alertas de desmatamento não cobrem fogo. O painel não identifica pessoas nem empresas. <a href="https://github.com/viniburilux/ucs-sob-pressao">Código</a>.</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body></html>
