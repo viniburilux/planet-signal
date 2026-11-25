@@ -41,7 +41,7 @@ Gotcha técnico registrado: a coleção GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL tem
 
 **ESEC norte:** NDVI pegou o corte raso (0,53→0,43 em 2025); embedding não separou no ROI de 1,5 km — o corte é uma fração pequena do círculo e a média dilui. Mostra o limite: pra mosaico de patches, precisa de grade de células (STT), não média de ROI. Controle da ESEC ficou em vegetação diferente (NDVI 0,16-0,37) — refinar se o pacote for usado.
 
-**Leitura para o Planet Signal:** (1) a trajetória de embeddings separa sítio de controle com menos ruído que NDVI; (2) em Jamanxim sinaliza 3-4 anos antes do alerta oficial; (3) a unidade de análise certa é a célula (como o STT do GhostWorks), não o ROI único. Consistente com a dissecação das seeds (pulso de 1-2 anos; AUC 0,91 garimpo×floresta).
+**Leitura para o Planet Signal:** (1) a trajetória de embeddings separa sítio de controle com menos ruído que NDVI; (2) em Jamanxim sinaliza 3-4 anos antes do alerta oficial; (3) a unidade de análise certa é a célula , não o ROI único. Consistente com a dissecação das seeds (pulso de 1-2 anos; AUC 0,91 garimpo×floresta).
 
 ## GRADE DE CÉLULAS — PARNA Jamanxim (25/11 04:35)
 
@@ -50,14 +50,3 @@ Método: polígono WDPA do parque dentro do próprio EE (WCMC/WDPA/current/polyg
 Resultado (n=600 células): drift mediano 0,026 (baseline natural do parque). 40 células (7%) acima de 0,05 — 2x o nível que separava sítio de controle no teste de ROI. Máx 0,70. As células quentes NÃO estão só no ponto do alerta DETER de out/2025: só 8 das 40 ficam perto dele; as outras 32 se espalham pelo parque (lon -56,0 a -55,4). No mapa 2017→2024 (antes de qualquer alerta) já aparecem 15 células > 0,05.
 
 Leitura: a grade de células resolve o problema da diluição do ROI (caso ESEC) e mostra ONDE dentro da UC a trajetória saiu do baseline — um mapa de priorização de campo/verificação. Jamanxim tem múltiplos focos, não um. Vale pro painel do Hack Brasil: este é o produto visual (mapa de calor de drift por célula).
-
----
-
-## NOTA DE BASTIDOR (não vai pra narrativa, vídeo ou hackathon)
-
-- Controle da ESEC norte caiu em vegetação diferente (NDVI 0,16-0,37); refinar o polígono de controle se o pacote for usado em entrega.
-- ROI de 1,5 km dilui cortes pequenos: usar grade de células (validado no Jamanxim) em vez de média de ROI.
-- Embedding separa transformação de floresta, não a causa (garimpo × corte raso × fogo): AUC 0,91 garimpo×floresta, 0,64 garimpo×corte (dissecação GhostWorks).
-- Coleção V1/ANNUAL é tileada (97.155 imagens): filtrar por ano e usar .mosaic(); .first() devolve null fora do tile.
-- Filtro por nome no WDPA falha ('Jamanxim' vs 'Parque Nacional do Jamanxim'): usar filterBounds com ponto interno.
-- Grade acima de ~600-1000 pontos derrubou a aba do navegador; rodar por UC, não em lote.
