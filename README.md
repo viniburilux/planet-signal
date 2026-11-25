@@ -1,8 +1,16 @@
-# UCs sob Pressão
+# Planet Signal
 
-Painel público nacional de unidades de conservação (UCs) e terras indígenas (TIs) sob pressão. Projeto do Hack Brasil 2026, trilha Meio ambiente & economia verde.
+Inteligência sobre trajetórias territoriais, com embeddings de satélite e dados abertos. Projeto do Hack Brasil 2026, trilha Meio ambiente & economia verde.
 
-## O que é
+## Ideia
+O Planet Signal lê como um território muda ao longo dos anos. Usa os Satellite Embeddings do Google AlphaEarth (conjunto de dados público do Google, não é nosso) para medir mudança entre anos e cruza com dados abertos oficiais. As unidades de conservação (UCs) e terras indígenas (TIs) são a primeira aplicação.
+
+O projeto mostra onde há mudança e o que os dados abertos dizem sobre a área. Não afirma que os embeddings predizem desmatamento.
+
+## Primeira aplicação: UCs sob pressão
+Mapa e ranking de UCs e TIs sob pressão.
+
+## Cards
 Um mapa e um ranking. Cada UC ou TI vira um card com:
 - percentual da área coberta por cadastros ambientais rurais (CAR) privados;
 - km² de supressão recente, a partir dos alertas de desmatamento;
