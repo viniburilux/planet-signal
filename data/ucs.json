@@ -2,8 +2,21 @@
   "atualizado_em": "2026-11-25",
   "fonte": "Dados abertos: DETER (INPE), limites de UCs e TIs (ICMBio, MMA, Funai), SICAR, SICOR (Banco Central)",
   "ucs": [
-    {"id": "esec-urucui-una", "nome": "ESEC Uruçuí-Una", "tipo": "Estação Ecológica", "uf": "PI", "lat": -8.9, "lon": -44.8,
-     "pressao": null, "car_pct": null, "supressao_km2": null, "credito_rural": null,
-     "status": "caso de demonstração em preparação; números entram após validação"}
+    {
+      "id": "esec-urucui-una",
+      "nome": "ESEC Uruçuí-Una",
+      "tipo": "Estação Ecológica (proteção integral)",
+      "uf": "PI",
+      "lat": -8.9,
+      "lon": -44.8,
+      "pressao": 97.3,
+      "car_pct": 97.3,
+      "supressao_km2": null,
+      "credito_rural": 24104815,
+      "cars_n": 79,
+      "cars_interseccao_km2": 5209,
+      "cars_criados_2025_2026": 22,
+      "status": "79 imóveis cadastrados no CAR cobrem 97,3% da unidade (a soma das interseções é de 5.209 km², porque os CARs se sobrepõem entre si). Um deles tem R$ 24,1 milhões de crédito rural público (FNE) vinculado. 22 dos 79 CARs foram criados em 2025 e 2026, depois de a grilagem da área já ser pública. Supressão recente: em validação."
+    }
   ]
 }
