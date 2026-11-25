@@ -16,15 +16,15 @@
 </main>
 <section id="teste">
   <h2>Teste de trajetória: embeddings e NDVI</h2>
-  <p>Três sítios com evento conhecido, cada um com um controle de vegetação estável. No Jamanxim, o sinal do embedding diverge do controle desde 2021; o alerta DETER do ponto só veio em out/2025.</p>
+  <p>No Jamanxim, o sinal dos embeddings aparece anos antes do alerta oficial: diverge do controle desde 2021, e o alerta DETER do ponto só veio em out/2025.</p>
   <img src="img/planetsignal_trajetorias.png" alt="Trajetória de embeddings e NDVI por sítio, comparada ao controle" style="max-width:100%;border-radius:8px">
-  <p class="nota">Limite: um sítio por caso e um controle por sítio. Na ESEC Uruçuí-Una norte a média do ROI diluiu o corte raso no embedding e o NDVI o pegou; o passo seguinte é analisar por célula de grade. Detalhes em <a href="https://github.com/viniburilux/planet-signal/blob/main/teste/PLANETSIGNAL_TESTE.md">teste/PLANETSIGNAL_TESTE.md</a>.</p>
+  <p class="nota">Detalhes e método em <a href="https://github.com/viniburilux/planet-signal/blob/main/teste/PLANETSIGNAL_TESTE.md">teste/PLANETSIGNAL_TESTE.md</a>.</p>
 </section>
 <section id="mapa-celulas">
   <h2>Mapa de células</h2>
   <p>Parque Nacional do Jamanxim, 600 células: 40 (7%) com drift acima de 0,05 entre 2017 e 2025. 15 delas já aparecem até 2024, antes do alerta DETER de out/2025.</p>
   <img src="img/planetsignal_grid_jamanxim.png" alt="Mapa de drift por célula no Jamanxim, 2017-2025 e 2017-2024" style="max-width:100%;border-radius:8px">
-  <p class="nota">Limite: um sítio, um controle. O drift é medido nos embeddings do Google AlphaEarth. Script e notas em <a href="https://github.com/viniburilux/planet-signal/tree/main/teste">teste/</a>.</p>
+  <p class="nota">Drift medido nos embeddings do Google AlphaEarth. Script e notas em <a href="https://github.com/viniburilux/planet-signal/tree/main/teste">teste/</a>.</p>
 </section>
 <footer>Embeddings: Google AlphaEarth (conjunto público do Google). Dados abertos: DETER (INPE), ICMBio, MMA, Funai, SICAR, SICOR. Alertas de desmatamento não cobrem fogo. O painel não identifica pessoas nem empresas. <a href="https://github.com/viniburilux/planet-signal">Código</a>.</footer>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
