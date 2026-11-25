@@ -41,7 +41,7 @@ Gotcha técnico registrado: a coleção GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL tem
 
 **ESEC norte:** NDVI pegou o corte raso (0,53→0,43 em 2025); embedding não separou no ROI de 1,5 km — o corte é uma fração pequena do círculo e a média dilui. Mostra o limite: pra mosaico de patches, precisa de grade de células (STT), não média de ROI. Controle da ESEC ficou em vegetação diferente (NDVI 0,16-0,37) — refinar se o pacote for usado.
 
-**Leitura para o Planet Signal:** (1) a trajetória de embeddings separa sítio de controle com menos ruído que NDVI; (2) em Jamanxim sinaliza 3-4 anos antes do alerta oficial; (3) a unidade de análise certa é a célula , não o ROI único. Consistente com a dissecação das seeds (pulso de 1-2 anos; AUC 0,91 garimpo×floresta).
+**Leitura para o Planet Signal:** (1) a trajetória de embeddings separa sítio de controle com menos ruído que NDVI; (2) em Jamanxim sinaliza 3-4 anos antes do alerta oficial; (3) a unidade de análise certa é a célula, não o ROI único. Consistente com a dissecação das seeds (pulso de 1-2 anos; AUC 0,91 garimpo×floresta).
 
 ## GRADE DE CÉLULAS — PARNA Jamanxim (25/11 04:35)
 
