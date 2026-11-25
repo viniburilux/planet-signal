@@ -45,7 +45,7 @@ Gotcha técnico registrado: a coleção GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL tem
 
 ## GRADE DE CÉLULAS — PARNA Jamanxim (25/11 04:35)
 
-Método: polígono WDPA do parque dentro do próprio EE (WCMC/WDPA/current/polygons), 600 pontos aleatórios (seed 7), stack 2017/2024/2025 mosaicado (coleção tileada), amostragem a 60m, delta cosseno por célula calculado server-side. ~40s de compute interativo, sem custo.
+Método: recorte da base WDPA para o parque dentro do próprio EE (WCMC/WDPA/current/polygons), 600 pontos aleatórios (seed 7), stack 2017/2024/2025 mosaicado (coleção tileada), amostragem a 60m, delta cosseno por célula calculado server-side. ~40s de compute interativo, sem custo.
 
 Resultado (n=600 células): drift mediano 0,026 (baseline natural do parque). 40 células (7%) acima de 0,05 — 2x o nível que separava sítio de controle no teste de ROI. Máx 0,70. As células quentes NÃO estão só no ponto do alerta DETER de out/2025: só 8 das 40 ficam perto dele; as outras 32 se espalham pelo parque (lon -56,0 a -55,4). No mapa 2017→2024 (antes de qualquer alerta) já aparecem 15 células > 0,05.
 
