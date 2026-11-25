@@ -8,14 +8,15 @@ fetch('data/ucs.json').then(r => r.json()).then(d => {
   const show = u => {
     ficha.hidden = false;
     ficha.innerHTML = `<h3>${u.nome}</h3><p>${u.tipo}, ${u.uf}</p><ul>
-      <li>Área coberta por CAR privados: ${fmt(u.car_pct, v => v + '%')}</li>
+      <li>Imóveis no CAR sobre a unidade: ${fmt(u.cars_n, v => v)} (criados em 2025-2026: ${fmt(u.cars_criados_2025_2026, v => v)})</li>
+      <li>Área coberta por CAR privados: ${fmt(u.car_pct, v => String(v).replace('.', ',') + '%')}</li>
       <li>Supressão recente: ${fmt(u.supressao_km2, v => v + ' km²')}</li>
       <li>Crédito rural vinculado: ${fmt(u.credito_rural, v => 'R$ ' + v.toLocaleString('pt-BR'))}</li></ul>
       <p class="nota">${u.status || ''}</p>`;
   };
   ucs.forEach((u, i) => {
     const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${i + 1}</td><td>${u.nome}</td><td>${u.uf}</td><td>${fmt(u.pressao, v => v)}</td>`;
+    tr.innerHTML = `<td>${i + 1}</td><td>${u.nome}</td><td>${u.uf}</td><td>${fmt(u.pressao, v => String(v).replace('.', ',') + '% em CAR')}</td>`;
     tr.onclick = () => { show(u); map.setView([u.lat, u.lon], 7); };
     tb.appendChild(tr);
     L.marker([u.lat, u.lon]).addTo(map).bindPopup(u.nome).on('click', () => show(u));
