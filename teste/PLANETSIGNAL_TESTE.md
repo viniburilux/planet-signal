@@ -53,12 +53,12 @@ Leitura: a grade de células resolve o problema da diluição do ROI (caso ESEC)
 
 ## Ranking de territórios (25/11)
 
-A grade de células foi aplicada a sete áreas amostradas, com polígonos oficiais (WDPA e Funai), 500 células por área. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025:
+A grade de células foi aplicada a sete áreas amostradas, com recortes das bases oficiais (WDPA e Funai), 500 células por área. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025:
 
 | # | Área amostrada | Células quentes | Drift mediano |
 |---|---|---|---|
 | 1 | REBIO Gurupi (MA) | 52,8% | 0,053 |
-| 2 | ESEC Uruçuí-Una (PI) | 41,4% | 0,046 |
+| 2 | ESEC Uruçuí-Una (PI), recorte analisado | 41,4% | 0,046 |
 | 3 | TI Kayapó (PA) | 24,4% | 0,023 |
 | 4 | TI Alto Turiaçu (MA) | 23,2% | 0,024 |
 | 5 | TI Parque do Xingu (MT) | 15,6% | 0,021 |
