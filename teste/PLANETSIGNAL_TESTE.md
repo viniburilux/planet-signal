@@ -50,3 +50,22 @@ Método: polígono WDPA do parque dentro do próprio EE (WCMC/WDPA/current/polyg
 Resultado (n=600 células): drift mediano 0,026 (baseline natural do parque). 40 células (7%) acima de 0,05 — 2x o nível que separava sítio de controle no teste de ROI. Máx 0,70. As células quentes NÃO estão só no ponto do alerta DETER de out/2025: só 8 das 40 ficam perto dele; as outras 32 se espalham pelo parque (lon -56,0 a -55,4). No mapa 2017→2024 (antes de qualquer alerta) já aparecem 15 células > 0,05.
 
 Leitura: a grade de células resolve o problema da diluição do ROI (caso ESEC) e mostra ONDE dentro da UC a trajetória saiu do baseline — um mapa de priorização de campo/verificação. Jamanxim tem múltiplos focos, não um. Vale pro painel do Hack Brasil: este é o produto visual (mapa de calor de drift por célula).
+
+## Ranking de territórios (25/11)
+
+A grade de células foi aplicada a seis áreas amostradas. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025 (500 células por área; 150 na ESEC Uruçuí-Una):
+
+| # | Área amostrada | Células quentes | Drift mediano |
+|---|---|---|---|
+| 1 | TI Alto Turiaçu (MA) | 73% | 0,071 |
+| 2 | REBIO Gurupi (MA) | 53% | 0,053 |
+| 3 | ESEC Uruçuí-Una (PI) | 49% | 0,049 |
+| 4 | TI Kayapó (PA) | 24% | 0,023 |
+| 5 | TI Parque do Aripuanã (MT/AM) | 18% | 0,019 |
+| 6 | TI Parque do Xingu (MT) | 16% | 0,021 |
+
+Referência: PARNA Jamanxim, 7%, mediana 0,026. O Maranhão concentra duas das três áreas com mais células quentes. O mapa por célula mostra onde verificar primeiro.
+
+Nota metodológica: as áreas são amostras. Algumas usam recorte retangular em vez do polígono oficial (ESEC Uruçuí-Una, Alto Turiaçu, Aripuanã). Limiar de 0,05 calibrado em floresta amazônica.
+
+![Drift por célula nas seis áreas](planetsignal_ranking_6.png)
