@@ -53,19 +53,17 @@ Leitura: a grade de células resolve o problema da diluição do ROI (caso ESEC)
 
 ## Ranking de territórios (25/11)
 
-A grade de células foi aplicada a seis áreas amostradas. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025 (500 células por área; 150 na ESEC Uruçuí-Una):
+A grade de células foi aplicada a áreas amostradas. Ranking pelo percentual de células com drift de embedding acima de 0,05 entre 2017 e 2025, nas áreas com polígono oficial:
 
 | # | Área amostrada | Células quentes | Drift mediano |
 |---|---|---|---|
-| 1 | TI Alto Turiaçu (MA) | 73% | 0,071 |
-| 2 | REBIO Gurupi (MA) | 53% | 0,053 |
-| 3 | ESEC Uruçuí-Una (PI) | 49% | 0,049 |
-| 4 | TI Kayapó (PA) | 24% | 0,023 |
-| 5 | TI Parque do Aripuanã (MT/AM) | 18% | 0,019 |
-| 6 | TI Parque do Xingu (MT) | 16% | 0,021 |
+| 1 | REBIO Gurupi (MA) | 53% | 0,053 |
+| 2 | TI Kayapó (PA) | 24% | 0,023 |
+| 3 | TI Parque do Xingu (MT) | 16% | 0,021 |
+| 4 | PARNA Jamanxim (PA) | 7% | 0,026 |
 
-Referência: PARNA Jamanxim, 7%, mediana 0,026. O Maranhão concentra duas das três áreas com mais células quentes. O mapa por célula mostra onde verificar primeiro.
+Em refino, com o polígono oficial: TI Alto Turiaçu (MA), TI Parque do Aripuanã (MT/AM) e ESEC Uruçuí-Una (PI).
 
-Nota metodológica: as áreas são amostras. Algumas usam recorte retangular em vez do polígono oficial (ESEC Uruçuí-Una, Alto Turiaçu, Aripuanã). Limiar de 0,05 calibrado em floresta amazônica.
+Nota metodológica: limiar de 0,05 calibrado em floresta amazônica.
 
-![Drift por célula nas seis áreas](planetsignal_ranking_6.png)
+![Drift por célula em três áreas amostradas](planetsignal_ranking_4.png)
