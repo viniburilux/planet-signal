@@ -1,0 +1,9 @@
+{
+  "atualizado_em": "2026-11-25",
+  "fonte": "Dados abertos: DETER (INPE), limites de UCs e TIs (ICMBio, MMA, Funai), SICAR, SICOR (Banco Central)",
+  "ucs": [
+    {"id": "esec-urucui-una", "nome": "ESEC Uruçuí-Una", "tipo": "Estação Ecológica", "uf": "PI", "lat": -8.9, "lon": -44.8,
+     "pressao": null, "car_pct": null, "supressao_km2": null, "credito_rural": null,
+     "status": "caso de demonstração em preparação; números entram após validação"}
+  ]
+}
